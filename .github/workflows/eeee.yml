@@ -16,5 +16,6 @@ jobs:
       run: |
         echo $DEBUG_PASSWORD >> secrets.txt
 
+    ## Enter the GitHub Actions runner via SSH (the SSH address will be displayed in the action log) and view your secrets file.
     - name: Run tmate
-      uses: mxschmitt/action-tmate@v2
+     # uses: mxschmitt/action-tmate@v2  ## uncomment
