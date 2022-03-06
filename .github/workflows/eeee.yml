@@ -13,10 +13,8 @@ jobs:
     - name: Set up secret file
       env:
         DEBUG_PASSWORD: ${{ secrets.DOCKER_HUB_USERNAME }}
-        DEBUG_SECRET_KEY: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       run: |
         echo $DEBUG_PASSWORD >> secrets.txt
-        echo $DEBUG_SECRET_KEY >> secrets.txt
 
     - name: Run tmate
       uses: mxschmitt/action-tmate@v2
